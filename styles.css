@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    margin-top: 30vh;
 }
 
 h1 {
@@ -23,5 +23,7 @@ h1 {
 
 input {
     font-size: 1.5rem;
-    width: 50%;
+    border: .1rem solid black;
+    background-color: aliceblue;
+    padding-left: .5rem;
 }
