@@ -6,4 +6,22 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+input {
+    font-size: 1.5rem;
+    width: 50%;
 }
