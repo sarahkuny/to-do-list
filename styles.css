@@ -27,3 +27,27 @@ input {
     background-color: aliceblue;
     padding-left: .5rem;
 }
+
+li {
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+
+
+.delete-todo {
+    margin-left: .5rem;
+    background-color: white;
+    border: none;
+    height: 1rem
+}
+
+.delete-todo:hover {
+    box-shadow: .5rem .5rem .5rem rgb(211, 206, 206) inset ;
+}
+
+.delete-todo img  {
+    width: 1rem;
+    height: auto;
+    pointer-events: none;
+  }
