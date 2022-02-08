@@ -10,6 +10,13 @@ function createToDo(toDo) {
     renderItem(item)
 }
 
+function toggleDone(key) {
+    const index = toDoItems.findIndex(item => item.id === Number(key));
+
+    toDoItems[index].completed = !toDoItems[index].completed;
+    renderItem(toDoItems[index])
+}
+
 //grab form
 const form = document.querySelector('.form');
 
@@ -36,3 +43,10 @@ function renderItem(item) {     //renders to-do list on page
 
     list.append(listItem) //append list item to DOM?
 }
+
+list.addEventListener('click', e => {
+    if (e.target.classList.contains(js-tick)) {
+        const itemKey = e.target.parentElement.dataset.key;
+        toggleDone(itemKey);
+    }
+})
